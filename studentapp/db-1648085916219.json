@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": 700,
+      "name": "khalid",
+      "city": "mansoura"
+    },
+    {
+      "id": "900",
+      "name": "khalid",
+      "city": "mansoura"
+    },
+    {
+      "id": "1000",
+      "name": "ahmed",
+      "city": "alex"
+    },
+    {
+      "id": "1100",
+      "name": "ali",
+      "city": "dameta"
+    },
+    {
+      "id": "1200",
+      "name": "ahmed",
+      "city": "ALEX"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

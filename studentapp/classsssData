@@ -1,0 +1,52 @@
+
+
+
+
+================================================================================================>>
+>>>>> To send data from child to parent :
+----------------------------------------->
+
+
+1--->in child:
+     -------->
+ use $emit ("moverForData","your data");
+
+  and add  emits:["moverForData"]
+
+2--->in parent:
+     -------->
+
+> within child tag add attribute <child @moverForData=" functionToRecieveData "/>
+>
+> in methods:{
+    functionToRecieveData(data){
+
+                this.object.push(data);
+
+    }
+},
+ emits:["moverForData"]     also add emits here !
+===============================================================================================>>
+
+>>>>> Dynamic components :
+----------------------------------------->
+
+
+1-> create a dynamicComponent:
+
+in this dynamic component 
+               > import the component that you want to move between :
+               > add thim to the  components:{} //in script
+               > in templet use <component :is="target">  also create links tags to <a @click.prevent="target='name of component'"></a>
+               > in data(){{ return {  target:'component name as a initial value'   } }}
+
+               > if you want to keep pages status use <keep-alive> tag around   <component :is="target"> 
+
+=================================================================================================>>
+>>Routes:
+--------->
+
+
+1-> install vue-router 
+
+2-> create router object
